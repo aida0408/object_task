@@ -71,12 +71,24 @@
 
 // Напишите функцию, которая принимает массив значений в т.ч и значения undefined и возвращает массив только без значений undefined
 // function task8 (str) {
-//     return str.map((item) => item === true, false)
-//
+//     return str.filter((item) => item !== undefined)
 // }
 //
-// console.log(task8[true, false, true,true, undefined, true, undefined])
-// console.log(task8[undefined, true, undefined])
+// console.log(task8( [true, false, true,true, undefined, false, true, undefined]))
+// console.log(task8( [undefined, true, undefined]))
+
+// const task8 = str => str.filter((item) => item !== undefined)
+// console.log(task8( [true, false, true,true, undefined, false, true, undefined]))
+// console.log(task8( [undefined, true, undefined]))
+
+// Напишите функцию, которая принимает массив чисел и возвращает их сумму. Использовать reduce
+
+function task9 (array){
+    return array.reduce((acc, idx) => acc + idx)
+}
+
+console.log(task9([1,2,3,4,5]))
+console.log(task9([2, 11, 5]))
 
 // let age = 88
 // if (age >= 10 && age <= 20){
