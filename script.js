@@ -82,13 +82,49 @@
 // console.log(task8( [undefined, true, undefined]))
 
 // Напишите функцию, которая принимает массив чисел и возвращает их сумму. Использовать reduce
+//
+// function task9 (array){
+//     return array.reduce((acc, idx) => acc + idx)
+// }
+//
+// console.log(task9([1,2,3,4,5]))
+// console.log(task9([2, 11, 5]))
 
-function task9 (array){
-    return array.reduce((acc, idx) => acc + idx)
+// Напишите функцию, которая принимает массив булевых значений и возвращает результат логического И над ними. Использовать reduce
+
+// const task1 = array =>{
+//     return array.reduce((acc, item) =>{
+//         if (acc [item] === undefined){
+//             return {...acc, [item]: 1}
+//         }
+//         return {...acc,[item]: acc [item] + 1}
+//
+//     },{})
+//
+// }
+
+const task1 = array => {
+    return array.reduce((acc,item)=>{
+        if(acc [item] === undefined){
+            return {...acc,[item]: 1}
+        }
+        return {...acc, [item]: acc [item] +1}
+
+
+    },{})
 }
+console.log(task1(["a","b","a","a","c"]))
 
-console.log(task9([1,2,3,4,5]))
-console.log(task9([2, 11, 5]))
+
+
+// const task1 = (array1, array2) => {
+//     return array1.filter((item) => array2.includes(item))
+// }
+// console.log(task1([1,2,3,4,3,5], [1,12,3,8,5]))
+
+
+
+
 
 // let age = 88
 // if (age >= 10 && age <= 20){
@@ -103,3 +139,4 @@ console.log(task9([2, 11, 5]))
 // let num = '321'
 // let sum = Number(num[0]) + Number(num[1]) + Number(num[2])
 // console.log(sum)
+
