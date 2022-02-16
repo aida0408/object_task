@@ -20,6 +20,21 @@
 // console.log(task2([2, 4, 7, 8]))
 
 // Напишите функцию, которая принимает массив объектов с полем id. Например [[{id: '100'}, {id: 2}]] и возвращает массив этих id
+//
+// const task3 = (array) => {
+//     return array.reduce((acc, rec) => {
+//         return acc.concat(rec.id)
+//     },[])
+//
+// }
+// console.log(task3([{id: 1},{id: 2},{id: 3},{id: 4}]))
+// console.log(task3([{id: true}]))
+//
+// const array = [34, 55]
+// const value = 77
+//
+// console.log(array.concat(value))
+// console.log([...array, value])
 
 // Напишите функцию, которая принимает массив чисел и возвращает массив строк по шаблону <h1>{number}</h1>
 
@@ -59,36 +74,81 @@
 
 //Напишите функцию, которая принимает массив булевых значений и возвращает массив только со значениями true
 
-// function task7(str){
-//     return str.filter((item) => item === true)
+// const task7 = (array) => {
+//     return array.filter((item) =>{
+//         return item
+//     })
 // }
 // console.log(task7( [true,false,true,true]))
 // console.log(task7( [true,false]))
 
-// const task7 = str => str.filter((item) => item === true)
+// const task7 = array => array.filter((item) => item)
 // console.log(task7( [true,false,true,true]))
 // console.log(task7( [true,false]))
 
 // Напишите функцию, которая принимает массив значений в т.ч и значения undefined и возвращает массив только без значений undefined
-// function task8 (str) {
-//     return str.filter((item) => item !== undefined)
+// function task8 (array) {
+//     return array.filter((item) => item !== undefined)
 // }
 //
 // console.log(task8( [true, false, true,true, undefined, false, true, undefined]))
 // console.log(task8( [undefined, true, undefined]))
 
-// const task8 = str => str.filter((item) => item !== undefined)
+// const task8 = array => array.filter((item) => item !== undefined)
 // console.log(task8( [true, false, true,true, undefined, false, true, undefined]))
 // console.log(task8( [undefined, true, undefined]))
 
 // Напишите функцию, которая принимает массив чисел и возвращает их сумму. Использовать reduce
 //
 // function task9 (array){
-//     return array.reduce((acc, idx) => acc + idx)
+//     return array.reduce((acc, rec) => {
+//        return acc + rec
+//     },0)
 // }
 //
 // console.log(task9([1,2,3,4,5]))
 // console.log(task9([2, 11, 5]))
+//
+// const exam = (array) => array.reduce((acc, rec) => acc + rec.length, 0)
+// console.log(exam(['Ivan','Boris','Micheil','Zoya']))
+
+// const task3 = (array) => {
+//     return array.reduce((acc, rec) =>{
+//         if (typeof rec.id === 'string'){
+//             return [...acc, rec.id]
+//         }
+//         return acc
+//     },[])
+// }
+// const task3 = (array) => {
+//     return array.filter((item) => typeof item.id === 'string').map (item => item.id)
+// }
+//
+// console.log(task3([{id:'Dasha'},{id:'Dima'},{id:'Misha'},{id:4},{id:true}]))
+
+// const a = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+// const res = a.split(" ").filter((item) => {
+//     return item.length < 6
+// }).join(" ")
+//
+// console.log(res)
+
+// const name = ['Roma', "Farhad", 'Aiganysh', 'Ayday', 'Dastan']
+//
+// const res = name.map((el) =>{
+//     return el.length
+// })
+// console.log(res)
+
+const num2 = (array) => {
+    return array.filter((el, idx)=>{
+        return array.indexOf(el) === idx
+    })
+}
+console.log(num2([1,2,3,4,2,7,1]))
+
+
+
 
 // Напишите функцию, которая принимает массив булевых значений и возвращает результат логического И над ними. Использовать reduce
 
@@ -102,21 +162,27 @@
 //     },{})
 //
 // }
-
-const task1 = array => {
-    return array.reduce((acc,item)=>{
-        if(acc [item] === undefined){
-            return {...acc,[item]: 1}
-        }
-        return {...acc, [item]: acc [item] +1}
-
-
-    },{})
-}
-console.log(task1(["a","b","a","a","c"]))
-
-
-
+// const task1 = array => {
+//     return array.reduce((acc,item)=>{
+//         if(acc [item] === undefined){
+//             return {...acc,[item]: 1}
+//         }
+//         return {...acc, [item]: acc [item] +1}
+//
+//
+//     },{})
+// }
+// console.log(task1(['a','b','c','b','c','a', 'a']))
+// const task1 = array =>{
+//     return array.reduce((acc, item)=>{
+//         if(acc [item] === undefined){
+//             return {...acc, [item]: 1}
+//         }
+//         return {...acc,[item]: acc [item] + 1}
+//     },{})
+//
+// }
+// console.log(task1(['a','b','c','b','c','a', 'a']))
 // const task1 = (array1, array2) => {
 //     return array1.filter((item) => array2.includes(item))
 // }
