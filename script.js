@@ -140,19 +140,50 @@
 // })
 // console.log(res)
 
-const num2 = (array) => {
-    return array.filter((el, idx)=>{
-        return array.indexOf(el) === idx
-    })
-}
-console.log(num2([1,2,3,4,2,7,1]))
+// const num2 = (array) => {
+//     return array.filter((el, idx)=>{
+//         return array.indexOf(el) === idx
+//     })
+// }
+// console.log(num2([1,2,3,4,2,7,1]))
 
-
-
+// let str = "lorem ipsum"
+// if (str.includes("a")){
+//     console.log('yes')
+// }else{
+//     console.log('no')
+// }
+//
+// let str1 = 'IT Dubai'
+// if(str1.includes('a')){
+//     console.log('yes')
+// }else{
+//     console.log('no')
+// }
+//
+// let str2 = "Moscow"
+// if (str2.includes("a")){
+//     console.log('yes')
+// }else {
+//     console.log('no')
+// }
+//
+// let str3 = "Bishkek"
+// if(str3.includes('k')){
+//     console.log('yes')
+// }else {
+//     console.log('no')
+// }
+// let str4 = 'Tokmok'
+// if(str4.includes('o')){
+//     console.log('yes')
+// }else{
 
 // Напишите функцию, которая принимает массив булевых значений и возвращает результат логического И над ними. Использовать reduce
 
 // const task1 = array =>{
+
+    // console.log("no")
 //     return array.reduce((acc, item) =>{
 //         if (acc [item] === undefined){
 //             return {...acc, [item]: 1}
