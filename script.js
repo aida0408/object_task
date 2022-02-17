@@ -147,38 +147,6 @@
 // }
 // console.log(num2([1,2,3,4,2,7,1]))
 
-// let str = "lorem ipsum"
-// if (str.includes("a")){
-//     console.log('yes')
-// }else{
-//     console.log('no')
-// }
-//
-// let str1 = 'IT Dubai'
-// if(str1.includes('a')){
-//     console.log('yes')
-// }else{
-//     console.log('no')
-// }
-//
-// let str2 = "Moscow"
-// if (str2.includes("a")){
-//     console.log('yes')
-// }else {
-//     console.log('no')
-// }
-//
-// let str3 = "Bishkek"
-// if(str3.includes('k')){
-//     console.log('yes')
-// }else {
-//     console.log('no')
-// }
-// let str4 = 'Tokmok'
-// if(str4.includes('o')){
-//     console.log('yes')
-// }else{
-
 // Напишите функцию, которая принимает массив булевых значений и возвращает результат логического И над ними. Использовать reduce
 
 // const task1 = array =>{
@@ -220,6 +188,175 @@
 // console.log(task1([1,2,3,4,3,5], [1,12,3,8,5]))
 
 
+
+
+
+
+
+
+//Povtorenie
+
+function task11(exam, project){
+    if(exam > 90 || project >10){
+        return 100
+    }else if (exam > 75 && project >= 5){
+        return 90
+    }else if (exam >50 && project >= 2){
+        return 75
+    }return 0
+
+}
+
+console.log(task11(100, 12))
+console.log(task11(99, 0))
+console.log(task11(10, 15))
+console.log(task11(85, 5))
+console.log(task11(55, 3))
+console.log(task11(55, 0))
+console.log(task11(20, 2))
+// function task10 (a, b, c, d){
+//     return Math.min(a, b, c, d)
+// }
+//
+// console.log(task10(12, 2, 35,5))
+
+// function task9 (num){
+//     return num.toString().length
+// }
+//
+// console.log(task9(987))
+//
+// function task09 (num){
+//     return String(num).length
+// }
+//
+// console.log(task09(54))
+
+// function task7 (num){
+//     return Math.sqrt(num)
+//
+// }
+//
+// console.log(task7(9))
+
+// function task6 (str){
+//     return str[str.length-1]
+// }
+//
+// console.log(task6('Hello everyone'))
+// console.log(task6('Hello'))
+// console.log(task6('Hello world'))
+
+
+
+// function task5 (num){
+//     return num % 5 === 0
+// }
+//
+// console.log(task5(8))
+// console.log(task5(25))
+// function task4 (a, b){
+//     if(a > b){
+//         return `${a} bolshe ${b}`
+//     }else if(a < b){
+//         return `${a} menshe ${b}`
+//     }return "oni ravny"
+// }
+//
+// console.log(task4(7 , 8))
+// console.log(task4(7 , 7))
+// console.log(task4(7 , 6))
+
+// function task3 (value){
+//     return typeof value
+// }
+//
+// console.log(task3("tramp"))
+// console.log(task3("789"))
+// console.log(task3(765))
+
+// function square (num1, num2){
+//     return num1 * num2
+// }
+//
+// console.log(square(7, 3))
+
+
+
+// let str = "lorem ipsum"
+// if (str.includes("a")){
+//     console.log('yes')
+// }else{
+//     console.log('no')
+// }
+//
+// let str1 = 'IT Dubai'
+// if(str1.includes('a')){
+//     console.log('yes')
+// }else{
+//     console.log('no')
+// }
+//
+// let str2 = "Moscow"
+// if (str2.includes("a")){
+//     console.log('yes')
+// }else {
+//     console.log('no')
+// }
+//
+// let str3 = "Bishkek"
+// if(str3.includes('k')){
+//     console.log('yes')
+// }else {
+//     console.log('no')
+// }
+// let str4 = 'Tokmok'
+// if(str4.includes('o')){
+//     console.log('yes')
+// }else{
+
+// function pol (num){
+//     return num * num
+// }
+//
+// console.log(pol(5))
+// console.log(pol(34))
+// console.log(pol(44))
+//
+
+
+
+// function greeting (name){
+//     return `Hello ${name}!`
+//
+// }
+//
+// console.log(greeting('Vera'))
+// console.log(greeting('Fara'))
+// console.log(greeting('Dima'))
+
+// function checkNumber (num){
+//     if (num > 0){
+//         return 'positive'
+//     }else if( num < 0 ){
+//         return "negative"
+//     }
+// }
+//
+// console.log(checkNumber(8))
+// console.log(checkNumber(-7))
+
+// function checkSymbol(str){
+//     if(str.includes("a")){
+//         return 'yes'
+//     }
+//     return "no"
+// }
+//
+// console.log(checkSymbol("Astana"))
+// console.log(checkSymbol("Moskow"))
+//
+//
 
 
 
